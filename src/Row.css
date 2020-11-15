@@ -1,0 +1,27 @@
+.row__posters {
+    /* this turns the movies into a row */
+    display:flex;
+    /* Creates scroll-bar */
+    overflow-y:hidden;
+    overflow-x: scroll;
+    padding: 20px;
+
+}
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row__poster {
+    /* this is going to keep that object ratio */
+    object-fit: contain;
+
+    width:100%;
+    max-height: 100px;
+
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}

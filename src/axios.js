@@ -5,3 +5,4 @@ const instance = axios.create({
 });
 
 export default instance;
+// if you have a default you can now call it whatever in another file 
